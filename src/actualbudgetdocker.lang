@@ -1,0 +1,195 @@
+# ===========================================================================
+# Multilingual file for the TOS 7 Docker application "actualbudgetdocker".
+# File name MUST be: <appid>.lang.  23-language superset (14 required by TOS).
+# The App Center picks the text matching the user's device language;
+# untranslated nodes fall back to English, which the official guide allows.
+# Fields: name (app title), auth (upstream author), descript (up to 512
+# chars), release_note, important (up to 512 chars).
+# Translations come from tosapp.json "translations"; run
+#   tosdocker lang <app>          to re-render this file
+#   tosdocker translate <app>     to see what still needs translating
+# ===========================================================================
+[en-us]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[zh-cn]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget 是一款本地优先的个人记账应用：快速、私密的信封预算法，跑在自家 NAS 上，并与桌面端、手机端（含 PWA）同步。可以管理账户、规划下个月、导入银行流水、查看报表，没有订阅、也不依赖云账号。所有预算文件都保存在应用数据目录里。"
+release_note = "1. 首个版本：基于 Docker Hub 的 Actual Budget 26.11.0，以非 root 容器运行。本地优先记账，支持桌面端/手机端同步，数据全部保存在应用数据目录。"
+important    = "需要 DockerEngine（缺失时应用中心会自动安装）。打开界面后先设置服务器密码，再新建预算文件；数据都保存在 DockerAppData/actualbudgetdocker/data。桌面端/手机端填同一个地址即可同步。界面为纯 HTTP，暴露到公网前请配置带 TLS 的反向代理。卸载并删除数据前请先备份 data 目录。"
+
+[zh-hk]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget 是一款本地優先的個人記帳應用：快速、私密的信封預算法，跑在自家 NAS 上，並與桌面端、手機端（含 PWA）同步。可以管理帳戶、規劃下個月、匯入銀行流水、查看報表，沒有訂閱、也不依賴雲端帳號。所有預算檔案都保存在應用資料目錄裡。"
+release_note = "1. 首個版本：基於 Docker Hub 的 Actual Budget 26.11.0，以非 root 容器運行。本地優先記帳，支援桌面端/手機端同步，資料全部保存在應用資料目錄。"
+important    = "需要 DockerEngine（缺少時應用中心會自動安裝）。開啟介面後先設定伺服器密碼，再建立預算檔案；資料都保存在 DockerAppData/actualbudgetdocker/data。桌面端/手機端填同一個位址即可同步。介面為純 HTTP，公開到互聯網前請配置帶 TLS 的反向代理。解除安裝並刪除資料前請先備份 data 目錄。"
+
+[fr-fr]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[de-de]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[it-it]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[es-es]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[hu-hu]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[ja-jp]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[ko-kr]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[pl-pl]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[ru-ru]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[tr-tr]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[pt-pt]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[ar-sa]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[cs-cz]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[he-il]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[id-id]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[nb-no]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[nl-nl]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[sv-se]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[th-th]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[vi-vn]
+name         = "Actual Budget"
+auth         = "actualbudget"
+version      = "@@VERSION@@"
+descript     = "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device."
+release_note = "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+

@@ -1,0 +1,104 @@
+{
+  "app_id": "actualbudgetdocker",
+  "title": "Actual Budget",
+  "image": "actualbudget/actual-server:26.11.0",
+  "repo_name": "actual",
+  "mode": "plain",
+  "container_port": 5006,
+  "category": [
+    "Utilities"
+  ],
+  "volumes": [
+    {
+      "host": "/Volume1/DockerAppData/actualbudgetdocker/data",
+      "container": "/data"
+    }
+  ],
+  "env": {
+    "TZ": "Asia/Shanghai"
+  },
+  "auth": "actualbudget",
+  "upstream_url": "https://github.com/actualbudget/actual",
+  "upstream_license": "MIT",
+  "descript": "Actual Budget is a local-first personal finance app: a fast, private envelope budget that runs on your NAS and syncs with the desktop and mobile apps. Track accounts, plan the next month, import bank statements and read reports - no subscription and no cloud account. Every budget file stays in the application data folder on your own device.",
+  "release_note": "1. First release: Actual Budget 26.11.0 from Docker Hub as a non-root container. Local-first budgeting with desktop/mobile sync, all data in the application data folder.",
+  "important": "Requires DockerEngine (installed automatically if missing). Open the web UI, set a server password on first use, then create a budget file; all data lives in DockerAppData/actualbudgetdocker/data. Point the desktop or mobile app at the same URL to sync. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal.",
+  "probe": {
+    "user_in_image": "(root)",
+    "entrypoint": [
+      "/usr/bin/tini",
+      "-g",
+      "--"
+    ],
+    "cmd": [
+      "node",
+      "app.js"
+    ],
+    "exposed_ports": [
+      5006
+    ],
+    "declared_volumes": [],
+    "image_healthcheck": [],
+    "digest": "actualbudget/actual-server@sha256:06cf186569cf58d93e12659ff1a517b65b5b0ebee7050a3991d4bd8a1d398da6",
+    "architecture": "x86_64",
+    "platforms": [
+      "x86_64",
+      "aarch64"
+    ],
+    "http_client_in_image": "",
+    "trial_run": {
+      "ok": false,
+      "http_code": "",
+      "state": "exited",
+      "paths": [],
+      "host_port": 18000,
+      "log_tail": "Checking if there are any migrations to run for direction \"up\"...\nError starting app: Error: EACCES: permission denied, mkdir '/data/server-files'\n    at async Object.mkdir (node:internal/fs/promises:1571:10)\n    at async ensureExists (file:///app/chunks/1694360000000-create-folders-BPLd3m28.js:6:3)\n    at async Migration.up (file:///app/chunks/1694360000000-create-folders-BPLd3m28.js:13:2) {\n  errno: -13,\n  code: 'EACCES',\n  syscall: 'mkdir',\n  path: '/data/server-files'\n}",
+      "files_in_mounts": ""
+    },
+    "docker_hub": {},
+    "github": {}
+  },
+  "entrypoint_file": "src/entrypoint.sh",
+  "platform": "x86_64",
+  "user": "1000:1000",
+  "publisher": "Moechz",
+  "compose_project": "actualbudgetdocker",
+  "github_repo": "actual",
+  "upstream_version": "26.11.0",
+  "release_tag_prefix": "v",
+  "version": "26.11.0-1",
+  "help": "https://github.com/Moechz/actualserver/issues",
+  "official": "https://github.com/actualbudget/actual",
+  "license": "MIT",
+  "docker_socket": false,
+  "group_add": [],
+  "healthcheck": [
+    "CMD-SHELL",
+    "node -e \"fetch('http://127.0.0.1:5006/').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))\""
+  ],
+  "healthcheck_start_period": "40s",
+  "translations": {
+    "zh-cn": {
+      "descript": "Actual Budget 是一款本地优先的个人记账应用：快速、私密的信封预算法，跑在自家 NAS 上，并与桌面端、手机端（含 PWA）同步。可以管理账户、规划下个月、导入银行流水、查看报表，没有订阅、也不依赖云账号。所有预算文件都保存在应用数据目录里。",
+      "important": "需要 DockerEngine（缺失时应用中心会自动安装）。打开界面后先设置服务器密码，再新建预算文件；数据都保存在 DockerAppData/actualbudgetdocker/data。桌面端/手机端填同一个地址即可同步。界面为纯 HTTP，暴露到公网前请配置带 TLS 的反向代理。卸载并删除数据前请先备份 data 目录。",
+      "release_note": "1. 首个版本：基于 Docker Hub 的 Actual Budget 26.11.0，以非 root 容器运行。本地优先记账，支持桌面端/手机端同步，数据全部保存在应用数据目录。"
+    },
+    "zh-hk": {
+      "descript": "Actual Budget 是一款本地優先的個人記帳應用：快速、私密的信封預算法，跑在自家 NAS 上，並與桌面端、手機端（含 PWA）同步。可以管理帳戶、規劃下個月、匯入銀行流水、查看報表，沒有訂閱、也不依賴雲端帳號。所有預算檔案都保存在應用資料目錄裡。",
+      "important": "需要 DockerEngine（缺少時應用中心會自動安裝）。開啟介面後先設定伺服器密碼，再建立預算檔案；資料都保存在 DockerAppData/actualbudgetdocker/data。桌面端/手機端填同一個位址即可同步。介面為純 HTTP，公開到互聯網前請配置帶 TLS 的反向代理。解除安裝並刪除資料前請先備份 data 目錄。",
+      "release_note": "1. 首個版本：基於 Docker Hub 的 Actual Budget 26.11.0，以非 root 容器運行。本地優先記帳，支援桌面端/手機端同步，資料全部保存在應用資料目錄。"
+    }
+  },
+  "data_notes": "`/data` (mounted from `/Volume1/DockerAppData/actualbudgetdocker/data`) holds the server files and every budget file you create: `server-files/` keeps the sync state and `user-files/` the budgets and uploaded statements.",
+  "design_notes": [
+    "**No database server.** Actual stores budgets in SQLite files under `/data`; the container starts as uid 1000 and needs nothing else.",
+    "**One volume, one port.** Only `/data` is persistent and only container port 5006 is published.",
+    "**Interpreter healthcheck.** The image ships neither curl nor wget, so the healthcheck asks the bundled Node runtime to fetch the start page."
+  ],
+  "limitations": [
+    "- The web UI is served over plain HTTP on the published port; use a TLS reverse proxy if you expose it outside your LAN.",
+    "- The server has no account system by default - set the server password on first use, otherwise anyone who can reach the port can open your budgets.",
+    "- The data folder is not visible in TOS File Manager; back it up over SMB/SSH or add the path to a TOS backup task."
+  ],
+  "host_port": 8033
+}
