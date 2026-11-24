@@ -142,6 +142,6 @@ Packaged for TOS 7 by Moechz. Upstream image used unmodified from Docker Hub.
 
 ## Support
 
-- Issues and questions: <https://github.com/Moechz/actualserver/issues>
+- Issues and questions: <https://github.com/Moechz/actual/issues>
 - Email: moechz@163.com
 - Privacy: [PRIVACY.md](PRIVACY.md) · Licence: [NOTICE.md](NOTICE.md)
